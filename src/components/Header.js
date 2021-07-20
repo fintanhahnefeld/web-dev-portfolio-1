@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
 import profile from "../imgs/profiler-1x.png";
 
 const Header = () => {
@@ -11,7 +11,11 @@ const Header = () => {
           <br />
           Web Developer
         </h1>
+
         <img className="col-4 mx-auto" src={profile} alt="" />
+      </div>
+      <div className="row lineContainer">
+        <div className="aniLine"></div>
       </div>
     </div>
   );

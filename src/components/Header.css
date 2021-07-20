@@ -1,4 +1,33 @@
 .header-bg {
-    background: url('https://images.unsplash.com/photo-1525847053749-2bc50678f5a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80');
-    background-size: cover;
+  background: url("https://images.unsplash.com/photo-1525847053749-2bc50678f5a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80");
+  background-size: cover;
+}
+
+.lineContainer {
+  height: 2px;
+  animation-name: lineSlide;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.aniLine {
+  position: absolute;
+  border-radius: 50%;
+  margin: 0;
+  height: 2px;
+  width: 10%;
+  background-color: gold;
+}
+
+@keyframes lineSlide {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 90%;
+  }
+  100% {
+    margin-left: 0%;
+  }
 }

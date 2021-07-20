@@ -27,7 +27,7 @@ const ContactForm = () => {
     <div>
       <div className="container-fluid">
         <form onSubmit={sendEmail}>
-          <div className="row pt-5 mx-auto" id="contact">
+          <div className="row pt-5 mx-auto pb-5" id="contact">
             <div className="col-10 form-group mx-auto">
               <h2 className="pb-3">Contact Me</h2>
               <input
