@@ -25,10 +25,10 @@ const ContactForm = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className="container-fluid">
         <form onSubmit={sendEmail}>
-          <div className="row pt-5 mx-auto">
-            <div className="col-8 form-group mx-auto">
+          <div className="row pt-5 mx-auto" id="contact">
+            <div className="col-10 form-group mx-auto">
               <h2 className="pb-3">Contact Me</h2>
               <input
                 type="text"
@@ -37,7 +37,7 @@ const ContactForm = () => {
                 name="name"
               />
             </div>
-            <div className="col-8 pt-2 form-group mx-auto">
+            <div className="col-10 pt-2 form-group mx-auto">
               <input
                 type="email"
                 className="form-control"
@@ -45,7 +45,7 @@ const ContactForm = () => {
                 name="email"
               />
             </div>
-            <div className="col-8 pt-2 form-group mx-auto">
+            <div className="col-10 pt-2 form-group mx-auto">
               <input
                 type="text"
                 className="form-control"
@@ -53,7 +53,7 @@ const ContactForm = () => {
                 name="subject"
               />
             </div>
-            <div className="col-8 pt-2 form-group mx-auto">
+            <div className="col-10 pt-2 form-group mx-auto">
               <textarea
                 className="form-control"
                 name="message"
@@ -63,7 +63,7 @@ const ContactForm = () => {
                 rows="10"
               ></textarea>
             </div>
-            <div className="col-8 pt-3 mx-auto">
+            <div className="col-10 pt-3 mx-auto">
               <input
                 type="submit"
                 className="btn btn-info"
